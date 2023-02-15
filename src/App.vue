@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>Contacts</h1>
+    
     <div id="nav">
     </div>
     <router-view/>
@@ -7,8 +9,18 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+ h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+ }
 html{
-  background: rgb(221, 219, 219);
+  background: linear-gradient(
+    to right,
+    #ffc080,
+    #ff80c0
+  );
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -16,6 +28,10 @@ html{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+   width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+
 }
 
 </style>

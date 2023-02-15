@@ -1,4 +1,5 @@
 <template>
+
   <div class="form">
     
      <form @submit="onSubmit">
@@ -47,18 +48,50 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .form {
   max-width: 600px;
   margin: 0 auto;
   border: 2px solid black;
   margin-bottom: 10px;
+  border-radius: 8px;
+  background: rgb(243, 229, 203);
 }
 form {
   padding: 20px;
 
   
+}
+button{
+     padding: 5px;
+      color: black;
+      background: #f8e1ed;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+}
+#name{
+   max-width: 500px;
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 6rem;
+  &::placeholder {
+    font-family: "Open Sans", serif;
+    font-size: .875rem;
+    padding: .5rem;
+  }
+}
+#phone{
+   max-width: 500px;
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 6rem;
+  &::placeholder {
+    font-family: "Open Sans", serif;
+    font-size: .875rem;
+    padding: .5rem;
+  }
 }
 
 </style>
